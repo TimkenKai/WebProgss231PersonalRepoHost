@@ -1,56 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Personal Profile Webpage</title>
-<link rel="stylesheet" href="css/myfile.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Profile Webpage</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<style>
-  table, th, td {
-    border:1px solid black;
-  }
-  </style>
 <body>
-  <div style="background-image: linear-gradient(rgb(220,220,220), rgb(105,105,105), rgb(211,148,85));">
-<h1>About Me</h1>
+  <header>
+    <h1>About Me</h1>
     <p>Timothy Ivan Mendoza</p>
-    <p>A College Student in Asia Pacific College with a partime work as a Badminton Coach,
-    as well as an assistant to various people.</p>
-<h1>Education /  Acheivments</h1>
-<table style="width:100%">
-  <tr>
-    <th>College</th>
-    <th>Secondary</th>
-    <th>Primary</th>
-  </tr>
-  <tr>
-    <td>Asia PAcific College</td>
-    <td>Don Bosco Technical Institute Makati</td>
-    <td>Don Bosco Technical Institute Makati</td>
-  </tr>
-  <tr>
-    <td>2020-Current</td>
-    <td>2011-2015</td>
-    <td>2005-2011</td>
-  </tr>
-</table>
-    <p>Currently Studying in Asia Pacific College: 2002-2024 (Irreg) </p>
-    <p> You may visit the School Website for more information about my School <a href="https://www.http://www.apc.edu.ph/" title="Asia Pacific College Offical Website">Visit our HTML Tutorial</a></p>
-<h1>Course</h1>
-  <p>BSCS-SS : Data Base Management</p>
-<h1>IT Experince</h1>
-    <p>Programming LAguages that I Know </p>
-    <p>C# Programming Language <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPO8cA8sAHtXEDYFeK_prPOvLgJk10fgc8_g&s" alt="https://learn.microsoft.com/en-us/dotnet/csharp/" style="width:104px;height:142px;"></p>
-    <p>Python Programming Language <img src="https://www.python.org/static/img/python-logo@2x.png" alt="python.org" style="width:104px;height:142px;"></p>
-    <p>R Programming Language <img src="https://www.r-project.org/Rlogo.png" alt="https://www.r-project.org/about.html" style="width:104px;height:142px;"></p>
-<h1>Goals In life</h1>
-<ol>
-  <li>To have a stable Source of Income</li>
-  <li>To have a lot of successful businesses</li>
-  <li>To have more skills that I can use to my advantage</li>
-  <li>To have a complete and loving family</li>
-  <li>To be able to travel around the world and settle in a country that prioritizes the people</li>
-</ol>  
-<h1>Picture Gallery</h1>
-</div>
+    <p>
+      A college student at Asia Pacific College with part-time work as a badminton coach and assistant to various people.
+    </p>
+  </header>
+  <main>
+    <section class="education">
+      <h1>Education & Achievements</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>College</th>
+            <th>Secondary</th>
+            <th>Primary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Asia Pacific College</td>
+            <td>Don Bosco Technical Institute Makati</td>
+            <td>Don Bosco Technical Institute Makati</td>
+          </tr>
+          <tr>
+            <td>2020 - Current</td>
+            <td>2011 - 2015</td>
+            <td>2005 - 2011</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Currently studying at Asia Pacific College (2020-2024).
+        Learn more about my school: <a href="https://www.apc.edu.ph/" title="Asia Pacific College Official Website" target="_blank">Visit APC Website</a>
+      </p>
+    </section>
+    <section class="course">
+      <h1>Course</h1>
+      <p>BSCS-SS: Database Management</p>
+    </section>
+    <section class="it-experience">
+      <h1>IT Experience</h1>
+      <p>Programming languages I know:</p>
+      <ul class="programming-languages">
+        <li>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPO8cA8sAHtXEDYFeK_prPOvLgJk10fgc8_g&s" alt="C#" />
+          <span>C# Programming</span>
+        </li>
+        <li>
+          <img src="https://www.python.org/static/img/python-logo@2x.png" alt="Python" />
+          <span>Python Programming</span>
+        </li>
+        <li>
+          <img src="https://www.r-project.org/Rlogo.png" alt="R" />
+          <span>R Programming</span>
+        </li>
+      </ul>
+    </section>
+    <section class="goals">
+      <h1>Goals In Life</h1>
+      <ol>
+        <li>To have a stable source of income</li>
+        <li>To establish successful businesses</li>
+        <li>To acquire more skills</li>
+        <li>To have a loving family</li>
+        <li>To travel the world and settle in a people-oriented country</li>
+      </ol>
+    </section>
+  </main>
 </body>
 </html>
