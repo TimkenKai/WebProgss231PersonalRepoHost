@@ -85,8 +85,4 @@ section h1 {
   color: #4caf50;
 }
 
-@media (max-width: 768px) {
-  .programming-languages {
-    flex-direction: column;
-  }
-}
+
