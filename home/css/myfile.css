@@ -10,15 +10,25 @@ body {
 header {
   text-align: center;
   padding: 30px;
-  background: #d3d3d3;
-  color: #333;
-  border-bottom: 3px solid #ccc;
+  background: #6BAA97; /* Aqua */
+  color: white;
+  border-bottom: 3px solid #FBA100; /* Sunshine */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
 }
 
 main {
   padding: 20px;
   max-width: 1200px;
   margin: auto;
+  color: #333;
 }
 
 section {
@@ -31,7 +41,7 @@ section {
 
 h1 {
   margin-top: 0;
-  color: #555;
+  color: #6C648B; /* Lavender */
 }
 
 table {
@@ -40,19 +50,21 @@ table {
   margin-top: 20px;
 }
 
-table th, table td {
+table th {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #FBA100; /* Sunshine */
+  color: white;
+}
+
+table td {
   padding: 10px;
   border: 1px solid #ddd;
   text-align: center;
 }
 
-table th {
-  background: #f0f0f0;
-  color: #555;
-}
-
 a {
-  color: #555;
+  color: #6BAA97; /* Aqua */
   text-decoration: none;
 }
 
@@ -72,7 +84,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: white;
+  background: #B6A19E; /* Dusty Rose */
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 10px;
@@ -88,7 +100,43 @@ a:hover {
   border-radius: 8px;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.flex-container div {
+  background: #FBA100; /* Sunshine */
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  flex: 1 1 calc(33.333% - 20px);
+  text-align: center;
+}
+
+.flex-container img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  border: 2px solid #6C648B; /* Lavender */
+}
+
+.flex-container p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
+  .flex-container div {
+    flex: 1 1 100%;
+  }
+
   .programming-languages {
     flex-direction: column;
   }
