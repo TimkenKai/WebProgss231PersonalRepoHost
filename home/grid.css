@@ -3,49 +3,64 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-}
-
-header {
-    background-image: linear-gradient(rgb(220, 220, 220), rgb(105, 105, 105), rgb(211, 148, 85));
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-main {
-    padding: 20px;
+    background-color: #f0f8ff;
 }
 
 /* Grid Layout */
-.grid-container {
+.grid-layout {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
+    grid-template-areas:
+        "menu main right"
+        "menu main right"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto 50px;
+    gap: 10px;
+    height: 100vh;
+    border: 2px solid black;
 }
 
-.grid-item {
-    background: rgb(245, 245, 245);
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.menu, .main, .right, .footer {
+    padding: 10px;
+    border: 2px solid blue;
+    background-color: #e6f7ff;
+    text-align: center;
+}
+
+/* Specific Areas */
+.menu {
+    grid-area: menu;
+}
+
+.main {
+    grid-area: main;
+    text-align: left;
+}
+
+.right {
+    grid-area: right;
+}
+
+.footer {
+    grid-area: footer;
 }
 
 /* Table Styles */
 table {
-    width: 100%;
+    margin: 20px auto;
     border-collapse: collapse;
-    margin: 20px 0;
-}
-
-table, th, td {
-    border: 1px solid black;
+    width: 80%;
+    text-align: center;
 }
 
 th, td {
+    border: 1px solid black;
     padding: 8px;
-    text-align: center;
+    background-color: #fff;
+}
+
+th {
+    background-color: #d1ecf1;
 }
 
 /* Image Styling */
@@ -64,11 +79,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
 }
