@@ -1,82 +1,98 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-/* Grid Layout */
 .grid-layout {
     display: grid;
-    grid-template-areas:
-        "menu main right"
+    grid-template-areas: 
         "menu main right"
         "footer footer footer";
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto auto 50px;
-    gap: 10px;
-    height: 100vh;
-    border: 2px solid black;
+    grid-gap: 20px;
+    padding: 20px;
 }
 
-.menu, .main, .right, .footer {
-    padding: 10px;
-    border: 2px solid blue;
-    background-color: #e6f7ff;
-    text-align: center;
+.menu, .right, .footer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Specific Areas */
 .menu {
     grid-area: menu;
+    text-align: center;
 }
 
 .main {
     grid-area: main;
-    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .right {
     grid-area: right;
+    text-align: center;
 }
 
 .footer {
     grid-area: footer;
-}
-
-/* Table Styles */
-table {
-    margin: 20px auto;
-    border-collapse: collapse;
-    width: 80%;
     text-align: center;
+    background-color: #333;
+    color: #fff;
 }
 
-th, td {
-    border: 1px solid black;
-    padding: 8px;
-    background-color: #fff;
+h1, h2, p, table, ul, ol {
+    margin-bottom: 20px;
 }
 
-th {
-    background-color: #d1ecf1;
-}
-
-/* Image Styling */
-img {
-    width: 100px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Links */
 a {
-    color: blue;
+    color: #007acc;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f0f0f0;
+}
+
+.flex-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex-list li {
+    background-color: #e8e8e8;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.flex-list img {
+    margin-left: 10px;
+    width: 30px;
+    height: auto;
 }
