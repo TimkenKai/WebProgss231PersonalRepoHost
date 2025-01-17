@@ -103,3 +103,13 @@ body.dark-theme a.text-white {
 .theme-icon:hover {
     background-color: #e2e6ea;
 }
+.form-container {
+    display: flex
+;
+    gap: 6px;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    max-width: 800px;
+}

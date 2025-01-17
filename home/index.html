@@ -137,7 +137,20 @@
                 </div>
             </main>
         </div>
-
+        <div class="message-input">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              placeholder="Hello, I would like to ask about..."
+              v-model="message"
+              required
+            ></textarea>
+          </div>
+          <div class="button-container">
+            <button :disabled="sent" type="submit">Submit</button>
+            <p v-if="sent">Message sent!</p>
+          </div>
+        </form>
         <footer id="footer" class="bg-dark text-white text-center py-3">
             <p>&copy; 2025 Timothy Ivan Mendoza</p>
             <div>
