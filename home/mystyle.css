@@ -123,3 +123,19 @@ body.dark-theme a.text-white {
     gap: 48px;
     margin: 112px 0;
 }
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-theme a {
+    color: #bb86fc;
+}
+
+.dark-theme .sidebar {
+    background-color: #1f1f1f;
+}
+
+.dark-theme .table-dark {
+    background-color: #333333;
+}
