@@ -43,13 +43,13 @@ body.dark {
 img {
     max-height: 200px;
 }
-
+/* Main Content Styles */
 main {
     overflow-y: auto;
     height: 100%;
 }
 
-
+/* Table Styles */
 .table {
     background-color: white;
 }
@@ -141,11 +141,11 @@ body.dark-theme a.text-white {
 }
 body {
     background-image: url('https://cdn.pixabay.com/photo/2016/11/18/22/58/stars-1837306_1280.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed; 
-    background-repeat: no-repeat; 
-    color: #fff; 
+    background-size: cover; /* Makes the image cover the entire background */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #fff; /* Ensures text is readable against the background */
 }
 
 
