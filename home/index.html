@@ -137,20 +137,47 @@
                 </div>
             </main>
         </div>
-        <div class="message-input">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              placeholder="Hello, I would like to ask about..."
-              v-model="message"
-              required
-            ></textarea>
-          </div>
-          <div class="button-container">
-            <button :disabled="sent" type="submit">Submit</button>
-            <p v-if="sent">Message sent!</p>
-          </div>
-        </form>
+        <div id="contact">
+            <div class="contact-content">
+              <h2>CONTACT</h2>
+              <form class="form-container" v-on:submit.prevent="submitForm">
+                <div class="personal-info">
+                  <div class="personal-input full-name">
+                    <label for="fullName">Full Name</label>
+                    <input
+                      placeholder="Timothy Ivan"
+                      id="fullName"
+                      type="text"
+                      v-model="fullName"
+                      required
+                    />
+                  </div>
+                  <div class="personal-input email">
+                    <label for="email">Email Address</label>
+                    <input
+                      placeholder="example@gmail.com"
+                      id="email"
+                      type="email"
+                      v-model="email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="message-input">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    placeholder="Hello, I would like to ask about..."
+                    v-model="message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="button-container">
+                  <button :disabled="sent" type="submit">Submit</button>
+                  <p v-if="sent">Message sent!</p>
+                </div>
+              </form>
+            </div>
         <footer id="footer" class="bg-dark text-white text-center py-3">
             <p>&copy; 2025 Timothy Ivan Mendoza</p>
             <div>
