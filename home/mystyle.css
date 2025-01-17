@@ -1,26 +1,48 @@
-/* Sidebar Styles */
+:root {
+    --bg-color-light: #ffffff;
+    --bg-color-dark: #121212;
+    --text-color-light: #000000;
+    --text-color-dark: #ffffff;
+}
+
+body.light {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+}
+
+body.dark {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
 .sidebar {
-    height: 100%;
-    position: sticky;
-    top: 0;
+    min-height: 100vh;
 }
 
-.sidebar h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+.theme-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--bg-color-light);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
 }
 
-.sidebar .nav-link {
-    font-size: 1.1rem;
-    margin: 5px 0;
-    padding: 10px 15px;
-    border-radius: 5px;
+.theme-icon svg {
+    width: 30px;
+    height: 30px;
 }
 
-.sidebar .nav-link:hover {
-    background-color: #505050;
+.sidebar .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
+img {
+    max-height: 200px;
+}
 /* Main Content Styles */
 main {
     overflow-y: auto;
