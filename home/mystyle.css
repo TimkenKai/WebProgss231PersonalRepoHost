@@ -139,3 +139,6 @@ body.dark-theme a.text-white {
 .dark-theme .table-dark {
     background-color: #333333;
 }
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/18/22/58/stars-1837306_1280.jpg');
+  }
