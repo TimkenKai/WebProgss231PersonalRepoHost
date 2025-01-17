@@ -43,13 +43,13 @@ body.dark {
 img {
     max-height: 200px;
 }
-/* Main Content Styles */
+
 main {
     overflow-y: auto;
     height: 100%;
 }
 
-/* Table Styles */
+
 .table {
     background-color: white;
 }
